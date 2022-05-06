@@ -1,38 +1,111 @@
+body {
+  background: linear-gradient(to right, rgb(132, 239, 170), rgb(255, 206, 219));
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 50px auto;
 }
 
-.App-link {
-  color: #61dafb;
+.todoList {
+  background-color: rgb(1, 64, 70);
+  width: 400px;
+  box-shadow: -7px -7px 4px rgba(174, 174, 174, 0.1);
+  color: #fff;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.todo-title {
+  padding: 30px;
+}
+
+.todoList h1 {
+  margin: 0;
+}
+
+.todoList p {
+  margin: 0;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #aaa;
+}
+
+/* ================================ */
+.todoItem-container {
+  margin-bottom: 40px;
+}
+
+.todoItem {
+  padding: 15px 30px;
+  background-color: rgba(193, 213, 245, 0.204);
+  margin-bottom: 2px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.fa-pen {
+  margin-right: 15px;
+}
+
+.fa {
+  cursor: pointer;
+}
+
+.fa:hover {
+  transform: scale(1.1);
+}
+
+.todoForm {
+  padding: 0 30px 30px;
+}
+
+.input {
+  height: 30px;
+  width: 65%;
+  margin-right: 2%;
+  padding-left: 10px;
+}
+
+.input-edit {
+  height: 30px;
+  width: 65%;
+  margin-right: 2%;
+  padding-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+button {
+  width: 23%;
+  background: transparent;
+  color: #fff;
+  font-size: 10px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.btn-save {
+  padding: 5px;
+}
+
+button:hover {
+  color: rgb(244, 83, 68);
+  background: #fff;
+}
+
+.form-control {
+  display: flex;
+}
+
+.danger {
+  color: red;
+}
+
+.todoItem {
+  cursor: pointer;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #aaa;
 }
